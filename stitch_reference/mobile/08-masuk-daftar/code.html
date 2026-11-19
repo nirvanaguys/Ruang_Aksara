@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+
+<html lang="id"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>RuangAksara - Masuk</title>
+<!-- Google Fonts: Lora & Nunito -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&amp;family=Nunito:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            lora: ['Lora', 'serif'],
+            nunito: ['Nunito', 'sans-serif'],
+          },
+          colors: {
+            brand: {
+              primary: '#2A6B65',
+              'primary-dark': '#1F524D',
+              'primary-light': '#D4EBE8',
+              secondary: '#5A829A',
+              sand: '#D4A373',
+              'sand-dark': '#4A3728',
+              bg: '#F5F9F8',
+              surface: '#FFFFFF',
+              dark: '#1A3331',
+              muted: '#5A7A76',
+              rose: '#E8B4B0',
+            }
+          }
+        }
+      }
+    }
+  </script>
+<style>
+    body {
+      background-color: #F5F9F8;
+      font-family: 'Nunito', sans-serif;
+      color: #1A3331;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      overflow-x: hidden;
+    }
+    .blur-orb-1 {
+      position: absolute;
+      width: 420px;
+      height: 420px;
+      top: -80px;
+      left: -100px;
+      background: radial-gradient(circle, rgba(42, 107, 101, 0.18) 0%, rgba(212, 235, 232, 0.05) 70%, transparent 100%);
+      filter: blur(50px);
+      border-radius: 9999px;
+      pointer-events: none;
+      z-index: 0;
+    }
+    .blur-orb-2 {
+      position: absolute;
+      width: 380px;
+      height: 380px;
+      bottom: -60px;
+      right: -80px;
+      background: radial-gradient(circle, rgba(212, 163, 115, 0.2) 0%, rgba(245, 249, 248, 0.05) 70%, transparent 100%);
+      filter: blur(50px);
+      border-radius: 9999px;
+      pointer-events: none;
+      z-index: 0;
+    }
+    .login-card {
+      background: #FFFFFF;
+      border: 1px solid rgba(42, 107, 101, 0.08);
+      border-radius: 24px;
+      box-shadow: 0 16px 40px rgba(42, 107, 101, 0.08), 0 4px 12px rgba(26, 51, 49, 0.03);
+    }
+  </style>
+<meta content="web_blank" name="shell-type"/><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-brand-bg flex items-center justify-center p-4 selection:bg-brand-primary-light selection:text-brand-dark">
+<!-- Subtle Ambient Blurred Orbs -->
+<div class="blur-orb-1"></div>
+<div class="blur-orb-2"></div>
+<!-- Main Container -->
+<main class="w-full max-w-[400px] relative z-10 my-auto py-8"><div class="flex flex-col w-full px-2 py-1 space-y-5">
+<!-- Minimalist Top Bar -->
+<div class="flex items-center justify-between w-full px-1">
+<a class="inline-flex items-center gap-1.5 text-on-surface-variant hover:text-primary transition-colors py-1" href="#">
+<span class="material-symbols-outlined text-label-md">arrow_back</span>
+<span class="font-label-sm text-label-sm">Beranda</span>
+</a>
+<div class="flex items-center gap-1.5">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+<span class="font-headline-sm text-label-sm font-semibold tracking-wider text-primary">RuangAksara</span>
+</div>
+</div>
+<!-- Main Cozy Reading Card -->
+<div class="w-full bg-surface-container-lowest rounded-2xl shadow-xl p-6 sm:p-7 relative overflow-hidden">
+<!-- Ambient Rain Texture Shimmer -->
+<div class="absolute -right-8 -top-8 w-32 h-32 rounded-full bg-primary-light/40 blur-2xl pointer-events-none"></div>
+<div class="absolute -left-8 -bottom-8 w-28 h-28 rounded-full bg-tertiary-fixed/30 blur-2xl pointer-events-none"></div>
+<div class="relative z-10 flex flex-col">
+<!-- Card Header: Book Emblem -->
+<div class="flex items-center justify-between mb-4">
+<div class="w-12 h-12 rounded-xl bg-surface-container-low flex items-center justify-center text-primary shadow-sm">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">auto_stories</span>
+</div>
+<div class="flex items-center gap-1 px-2.5 py-1 rounded-full bg-surface-container text-primary font-label-sm text-code-kbd">
+<span class="material-symbols-outlined text-code-kbd">water_drop</span>
+<span>Suasana Tenang</span>
+</div>
+</div>
+<!-- Heading & Warm Subtext -->
+<div class="space-y-1 mb-6">
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface">Selamat datang kembali</h1>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Rak bukumu sudah menunggumu.</p>
+</div>
+<!-- Interactive Form -->
+<form class="space-y-4" id="loginForm" onsubmit="event.preventDefault();">
+<!-- Field 1: Email -->
+<div class="space-y-1.5">
+<label class="block font-label-sm text-label-sm text-on-surface" for="emailInput">Surel</label>
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-3.5 text-on-surface-variant text-label-lg pointer-events-none">mail</span>
+<input class="w-full h-12 pl-11 pr-4 rounded-xl bg-surface-container-low text-on-surface font-body-sm text-body-sm focus:bg-surface-container-lowest focus:outline-none focus:shadow-md transition-all placeholder:text-outline-variant" id="emailInput" placeholder="nama@email.com" type="email" value="vana@email.com"/>
+</div>
+</div>
+<!-- Field 2: Password -->
+<div class="space-y-1.5">
+<div class="flex items-center justify-between">
+<label class="block font-label-sm text-label-sm text-on-surface" for="passwordInput">Kata sandi</label>
+<a class="font-label-sm text-code-kbd text-primary hover:underline" href="#">Lupa kata sandi?</a>
+</div>
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-3.5 text-on-surface-variant text-label-lg pointer-events-none">lock</span>
+<input class="w-full h-12 pl-11 pr-12 rounded-xl bg-surface-container-low text-on-surface font-body-sm text-body-sm focus:bg-surface-container-lowest focus:outline-none focus:shadow-md transition-all placeholder:text-outline-variant" id="passwordInput" placeholder="Masukkan kata sandi" type="password" value="aksara123"/>
+<button aria-label="Tampilkan atau sembunyikan kata sandi" class="absolute right-3 p-1.5 text-on-surface-variant hover:text-primary transition-colors rounded-lg flex items-center justify-center" id="togglePassword" type="button">
+<span class="material-symbols-outlined text-label-lg" id="eyeIcon">visibility</span>
+</button>
+</div>
+</div>
+<!-- Submit Button -->
+<div class="pt-2">
+<button class="w-full h-12 rounded-full bg-primary hover:bg-primary-dark text-on-primary font-label-md text-label-md flex items-center justify-center gap-2 shadow-md hover:shadow-lg active:scale-[0.99] transition-all" id="btnSubmit" type="submit">
+<span>Masuk ke Ruang Aksara</span>
+<span class="material-symbols-outlined text-label-md">arrow_forward</span>
+</button>
+</div>
+<!-- Decorative Divider -->
+<div class="relative flex items-center justify-center py-2">
+<div class="w-full h-px bg-surface-variant"></div>
+<span class="absolute bg-surface-container-lowest px-3 font-label-sm text-code-kbd uppercase tracking-widest text-on-surface-variant">atau</span>
+</div>
+<!-- Guest Exploration Button -->
+<button class="w-full h-12 rounded-full bg-surface-container-low hover:bg-surface-container text-on-surface font-label-md text-label-md flex items-center justify-center gap-2 transition-all active:scale-[0.99]" type="button">
+<span class="material-symbols-outlined text-label-lg text-primary">person_search</span>
+<span>Jelajah sebagai Tamu</span>
+</button>
+</form>
+<!-- Auth Switch Callout -->
+<div class="mt-6 pt-4 text-center">
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          Belum punya akun? 
+          <a class="font-label-md text-label-md text-primary font-bold hover:underline ml-1" href="#">Daftar sekarang</a>
+</p>
+</div>
+</div>
+</div>
+<!-- Warm Community Micro Quote Badge -->
+<div class="w-full bg-surface-container/60 rounded-xl p-3.5 flex items-center gap-3 shadow-sm">
+<div class="w-8 h-8 rounded-full bg-surface-container-lowest flex items-center justify-center text-primary shrink-0 shadow-sm">
+<span class="material-symbols-outlined text-label-md">format_quote</span>
+</div>
+<p class="font-quote text-code-kbd italic text-on-surface-variant leading-tight min-w-0">
+      “Membaca adalah jembatan sunyi menuju sejuta riuh keajaiban.”
+    </p>
+</div>
+<!-- Footer Micro Meta Links -->
+<div class="flex items-center justify-center flex-wrap gap-2 pt-1 pb-3 text-center">
+<a class="font-label-sm text-code-kbd text-on-surface-variant hover:text-primary transition-colors" href="#">Privasi Terjaga</a>
+<span class="text-on-surface-variant text-code-kbd">•</span>
+<a class="font-label-sm text-code-kbd text-on-surface-variant hover:text-primary transition-colors" href="#">Komunitas Ramah</a>
+<span class="text-on-surface-variant text-code-kbd">•</span>
+<a class="font-label-sm text-code-kbd text-on-surface-variant hover:text-primary transition-colors" href="#">Bantuan</a>
+</div>
+</div>
+<script>
+  (function() {
+    const pwdInput = document.getElementById('passwordInput');
+    const toggleBtn = document.getElementById('togglePassword');
+    const eyeIcon = document.getElementById('eyeIcon');
+
+    if (toggleBtn && pwdInput && eyeIcon) {
+      toggleBtn.addEventListener('click', function() {
+        const isPassword = pwdInput.getAttribute('type') === 'password';
+        pwdInput.setAttribute('type', isPassword ? 'text' : 'password');
+        eyeIcon.textContent = isPassword ? 'visibility_off' : 'visibility';
+      });
+    }
+
+    const form = document.getElementById('loginForm');
+    const btnSubmit = document.getElementById('btnSubmit');
+
+    if (form && btnSubmit) {
+      form.addEventListener('submit', function() {
+        btnSubmit.innerHTML = `
+          <span class="inline-block animate-spin material-symbols-outlined text-label-md">progress_activity</span>
+          <span>Membuka Ruangan...</span>
+        `;
+        btnSubmit.disabled = true;
+        setTimeout(function() {
+          btnSubmit.innerHTML = `
+            <span>Berhasil Masuk</span>
+            <span class="material-symbols-outlined text-label-md">check</span>
+          `;
+          btnSubmit.classList.replace('bg-primary', 'bg-tertiary-container');
+        }, 1200);
+      });
+    }
+  })();
+</script></main>
+</body></html>

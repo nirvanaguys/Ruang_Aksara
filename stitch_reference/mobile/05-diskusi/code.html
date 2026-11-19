@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+
+<html lang="id"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,600;0,700;1,400&amp;family=Nunito+Sans:ital,wght@0,400;0,600;0,700;1,400&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-surface-variant": "#5A7A76", "glass": "rgba(255, 255, 255, 0.65)", "surface-tint": "#276862", "on-surface": "#051f1e", "on-primary-fixed": "#00201d", "rose": "#E8B4B0", "surface-container-highest": "#cce8e5", "tertiary-fixed-dim": "#f0bd8b", "surface-variant": "#E8EFED", "outline-variant": "#bfc9c6", "on-primary": "#F5F9F8", "primary-light": "#D4EBE8", "on-error": "#ffffff", "secondary-fixed": "#c4e7ff", "on-primary-fixed-variant": "#01504b", "secondary-light": "#D8E4ED", "on-tertiary": "#4A3728", "on-background": "#051f1e", "inverse-primary": "#93d2cb", "secondary": "#3b637a", "on-secondary-container": "#3d667d", "error": "#ba1a1a", "border-subtle": "rgba(42, 107, 101, 0.08)", "inverse-surface": "#1c3533", "surface": "#FFFFFF", "on-error-container": "#93000a", "on-primary-container": "#a9e9e1", "glass-strong": "rgba(255, 255, 255, 0.85)", "surface-bright": "#e3fffb", "tertiary-fixed": "#ffdcbd", "on-secondary": "#ffffff", "primary-container": "#2a6b65", "tertiary": "#65421a", "primary-dark": "#1F524D", "secondary-fixed-dim": "#a3cce6", "primary": "#06534d", "error-container": "#ffdad6", "on-tertiary-container": "#ffd5af", "on-secondary-fixed": "#001e2c", "surface-dim": "#c4e0dc", "primary-fixed": "#aeefe7", "inverse-on-surface": "#daf6f3", "background": "#F5F9F8", "primary-fixed-dim": "#93d2cb", "secondary-container": "#b9e2fd", "surface-container-lowest": "#ffffff", "on-tertiary-fixed-variant": "#623f18", "on-secondary-fixed-variant": "#214b61", "tertiary-container": "#80592f", "surface-container": "#d8f4f0", "surface-container-high": "#d2eeea", "on-tertiary-fixed": "#2c1600", "outline": "#6f7977", "surface-container-low": "#ddf9f6" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-sm": "0.5rem", "gutter": "1.5rem", "space-lg": "1.5rem", "gutter-lg": "2rem", "margin-sm": "1rem", "margin-lg": "3rem", "gutter-sm": "1rem", "space-2xl": "3rem", "space-xl": "2rem", "space-md": "1rem", "space-3xl": "4rem", "space-xs": "0.25rem", "space-4xl": "6rem", "margin-md": "2rem", "margin": "1.5rem" }, "fontFamily": { "body-lg": ["Nunito Sans"], "headline-sm": ["Noto Serif"], "label-lg": ["Nunito Sans"], "body-sm": ["Nunito Sans"], "body-md": ["Nunito Sans"], "headline-lg": ["Noto Serif"], "label-sm": ["Nunito Sans"], "quote": ["Noto Serif"], "code-kbd": ["Nunito Sans"], "headline-lg-mobile": ["Noto Serif"], "display-mobile": ["Noto Serif"], "label-md": ["Nunito Sans"], "display": ["Noto Serif"], "headline-md": ["Noto Serif"] }, "fontSize": { "body-lg": ["1.125rem", { "lineHeight": "1.7", "fontWeight": "400" }], "headline-sm": ["1.25rem", { "lineHeight": "1.4", "fontWeight": "600" }], "label-lg": ["1rem", { "lineHeight": "1.3", "fontWeight": "600" }], "body-sm": ["0.875rem", { "lineHeight": "1.6", "fontWeight": "400" }], "body-md": ["1rem", { "lineHeight": "1.7", "fontWeight": "400" }], "headline-lg": ["2.5rem", { "lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "700" }], "label-sm": ["0.8125rem", { "lineHeight": "1.2", "fontWeight": "600" }], "quote": ["1.5rem", { "lineHeight": "1.5", "fontWeight": "500" }], "code-kbd": ["0.75rem", { "lineHeight": "1", "fontWeight": "700" }], "headline-lg-mobile": ["1.875rem", { "lineHeight": "1.25", "letterSpacing": "-0.01em", "fontWeight": "700" }], "display-mobile": ["2.25rem", { "lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700" }], "label-md": ["0.9375rem", { "lineHeight": "1.2", "fontWeight": "600" }], "display": ["3.5rem", { "lineHeight": "1.15", "letterSpacing": "-0.02em", "fontWeight": "700" }], "headline-md": ["1.75rem", { "lineHeight": "1.3", "fontWeight": "600" }] } } } };</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-background font-body-md text-body-md text-on-surface flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 pt-safe bg-glass backdrop-blur-xl shadow-[0_1px_8px_rgba(26,51,49,0.04)]"><div class="h-16 px-gutter-sm flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-sm min-w-0"><img alt="RuangAksara Logo" class="h-8 w-auto object-contain flex-shrink-0" src="https://lh3.googleusercontent.com/aida/AEtjO1XZobkiqtIYtFUVeOh30BRTUZ08_K9bo_ctkplgk_mxu43F9ZBzvSY2NYZQaua6UMmzJwJKeSgd8XL94SG0RwdzN6rUfq2IdAh7BZacz7aLeuoHryk9hJobRWQrUjWOAcYVm-nqnf7AFO95kflmzm6CYXQsRcfaUxudb3hPLSSSeOOojATOqyh1VPik6tGQ0XFN241cdJNvbW0mSvFZkvVlBPpSzeFzXPARzYTQjcFk0uocaqa7vyavzzPu"/><div class="flex flex-col truncate"><span class="font-headline-sm text-headline-sm text-primary tracking-tight leading-none truncate">RuangAksara</span><span class="font-label-sm text-label-sm text-on-surface-variant truncate">Diskusi</span></div></div><div class="flex items-center gap-space-xs flex-shrink-0"><button aria-label="Buka pencarian cepat" class="w-11 h-11 flex items-center justify-center rounded-full text-primary hover:bg-primary-light/50 transition-colors"><span class="material-symbols-outlined text-[22px]">search</span></button><button aria-label="Profil Saya" class="w-11 h-11 flex items-center justify-center rounded-full hover:opacity-90 transition-opacity"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDhlUHCcNNW9C-64egHUREcUs6KuzO71-sjn_qEemU-5R2_IiLAwiq_BpX0TEsmK3Y0E-GuWUMTawyGowAIGpPyLbO6b7EvRbB-VPIBoUEuIgyhRZixaCc2YBySJuQrw0rExn4kVn8zTR1iEgT4FG8UEuIUbWYhqf065s8lvfckpMhAXaqjCWrmmSqhPXOeDIFhZsYaCNeSHFEWT1rq3_TkRaDo2vQl4EnAk4engNVXL-72CWaxiRxXvA"/></button></div></div></header><main class="flex-1 flex flex-col relative w-full pt-16 pb-24 bg-background"><div class="flex flex-col w-full px-margin-sm space-y-space-md">
+<!-- Subtle Ambient Glow -->
+<div class="fixed -top-12 left-1/2 -translate-x-1/2 w-72 h-72 rounded-full bg-primary-light/40 blur-3xl pointer-events-none -z-10"></div>
+<!-- Header Banner Card: Literary & Calm -->
+<section class="bg-surface rounded-xl p-space-md shadow-sm flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-surface-container-high text-primary font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px] text-primary">coffee</span>
+        Ruang Temu Literasi
+      </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+        142 online
+      </span>
+</div>
+<div>
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface tracking-tight">
+        Diskusi
+      </h1>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+        Ngobrol tentang buku, tanpa berisik. Berbagi sudut pandang di balik lembar kata.
+      </p>
+</div>
+<!-- Quick Search / Filter Input Pill -->
+<div class="mt-space-xs flex items-center bg-surface-variant rounded-full px-3 py-2 text-on-surface-variant gap-2 transition-all focus-within:bg-surface focus-within:shadow-sm">
+<span class="material-symbols-outlined text-[20px] text-primary">search</span>
+<input class="bg-transparent border-0 outline-none w-full font-body-sm text-body-sm text-on-surface placeholder:text-on-surface-variant/70" placeholder="Cari topik diskusi atau judul buku..." type="text"/>
+<span class="text-code-kbd font-code-kbd px-1.5 py-0.5 rounded bg-surface text-on-surface-variant shadow-xs">⌘K</span>
+</div>
+</section>
+<!-- Segmented Forum Tabs -->
+<nav aria-label="Kategori Diskusi" class="flex bg-surface-variant/80 p-1 rounded-full shadow-inner">
+<button class="flex-1 py-2 rounded-full font-label-md text-label-md transition-all flex items-center justify-center gap-1.5 bg-primary text-on-primary shadow-xs" id="tab-forum-umum" onclick="switchTab('umum')">
+<span class="material-symbols-outlined text-[18px]">forum</span>
+      Forum Umum
+    </button>
+<button class="flex-1 py-2 rounded-full font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-all flex items-center justify-center gap-1.5" id="tab-klub-buku" onclick="switchTab('klub')">
+<span class="material-symbols-outlined text-[18px]">menu_book</span>
+      Klub Buku
+      <span class="w-1.5 h-1.5 rounded-full bg-rose"></span>
+</button>
+</nav>
+<!-- Filter & Sort micro-chips -->
+<div class="flex items-center justify-between px-0.5 overflow-x-auto no-scrollbar gap-2 py-0.5">
+<div class="flex items-center gap-1.5">
+<button class="px-3 py-1 rounded-full bg-primary-light text-primary font-label-sm text-label-sm whitespace-nowrap shadow-xs">
+        Semua Topik
+      </button>
+<button class="px-3 py-1 rounded-full bg-surface text-on-surface-variant hover:bg-surface-variant font-label-sm text-label-sm whitespace-nowrap shadow-xs">
+        Resensi
+      </button>
+<button class="px-3 py-1 rounded-full bg-surface text-on-surface-variant hover:bg-surface-variant font-label-sm text-label-sm whitespace-nowrap shadow-xs">
+        Karya
+      </button>
+<button class="px-3 py-1 rounded-full bg-surface text-on-surface-variant hover:bg-surface-variant font-label-sm text-label-sm whitespace-nowrap shadow-xs">
+        Warta
+      </button>
+</div>
+<button aria-label="Urutkan obrolan" class="flex-shrink-0 w-8 h-8 rounded-full bg-surface flex items-center justify-center text-on-surface-variant shadow-xs">
+<span class="material-symbols-outlined text-[18px]">sort</span>
+</button>
+</div>
+<!-- Discussion Threads List Container -->
+<div class="flex flex-col gap-space-sm pb-space-lg" id="thread-list">
+<!-- Thread 1: Hujan Deras (Featured / Rain Sanctuary Theme) -->
+<article class="bg-surface rounded-xl p-space-md shadow-sm active:scale-[0.99] transition-transform flex flex-col gap-space-xs relative overflow-hidden group">
+<div class="absolute left-0 top-0 bottom-0 w-1 bg-primary rounded-l-xl"></div>
+<div class="flex items-center justify-between gap-2">
+<div class="flex items-center gap-2 min-w-0">
+<span class="px-2.5 py-0.5 rounded-full bg-primary-light text-primary font-label-sm text-label-sm">
+            Resensi
+          </span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">
+            Di lemari Hujan &amp; Teh
+          </span>
+</div>
+<span class="text-on-surface-variant flex items-center gap-1 text-[12px] font-label-sm flex-shrink-0">
+<span class="material-symbols-outlined text-[14px]">schedule</span>
+          2 jam lalu
+        </span>
+</div>
+<a class="block focus:outline-none" href="#">
+<h2 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors leading-snug">
+          Buku apa yang paling cocok dibaca saat hujan deras?
+        </h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mt-1">
+          Lagi rintik-rintik sendu di teras rumah. Pengin baca novel yang nuansanya hangat atau justru misteri kamar tertutup klasik...
+        </p>
+</a>
+<!-- Footer Metadata & Author -->
+<div class="flex items-center justify-between pt-space-xs mt-1">
+<div class="flex items-center gap-2 min-w-0">
+<div class="w-6 h-6 rounded-full bg-surface-container-highest text-primary flex items-center justify-center font-label-sm text-[11px] font-bold">
+            N
+          </div>
+<span class="font-label-sm text-label-sm text-on-surface truncate">Nadira Ayu</span>
+</div>
+<div class="flex items-center gap-3 text-on-surface-variant">
+<span class="flex items-center gap-1 font-label-sm text-label-sm bg-surface-container-low px-2 py-0.5 rounded-full text-primary">
+<span class="material-symbols-outlined text-[15px]">mode_comment</span>
+            24 balasan
+          </span>
+<button aria-label="Simpan thread" class="text-on-surface-variant hover:text-primary">
+<span class="material-symbols-outlined text-[18px]">bookmark_border</span>
+</button>
+</div>
+</div>
+</article>
+<!-- Thread 2: Rekomendasi Pemula -->
+<article class="bg-surface rounded-xl p-space-md shadow-sm active:scale-[0.99] transition-transform flex flex-col gap-space-xs relative overflow-hidden group">
+<div class="flex items-center justify-between gap-2">
+<div class="flex items-center gap-2 min-w-0">
+<span class="px-2.5 py-0.5 rounded-full bg-rose text-[#5E2B27] font-label-sm text-label-sm">
+            Karya
+          </span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">
+            Sastra &amp; Cerita
+          </span>
+</div>
+<span class="text-on-surface-variant flex items-center gap-1 text-[12px] font-label-sm flex-shrink-0">
+<span class="material-symbols-outlined text-[14px]">schedule</span>
+          5 jam lalu
+        </span>
+</div>
+<a class="block focus:outline-none" href="#">
+<h2 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors leading-snug">
+          Rekomendasi novel pertama untuk yang baru mulai membaca
+        </h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mt-1">
+          Adik saya baru mau coba membiasakan membaca. Mencari kisah dengan alur lincah, tidak terlalu tebal, tapi memikat sejak bab satu.
+        </p>
+</a>
+<div class="flex items-center justify-between pt-space-xs mt-1">
+<div class="flex items-center gap-2 min-w-0">
+<div class="w-6 h-6 rounded-full bg-secondary-fixed text-secondary flex items-center justify-center font-label-sm text-[11px] font-bold">
+            R
+          </div>
+<span class="font-label-sm text-label-sm text-on-surface truncate">Raka Pratama</span>
+</div>
+<div class="flex items-center gap-3 text-on-surface-variant">
+<span class="flex items-center gap-1 font-label-sm text-label-sm bg-surface-container-low px-2 py-0.5 rounded-full text-primary">
+<span class="material-symbols-outlined text-[15px]">mode_comment</span>
+            41 balasan
+          </span>
+<button aria-label="Simpan thread" class="text-on-surface-variant hover:text-primary">
+<span class="material-symbols-outlined text-[18px]">bookmark_border</span>
+</button>
+</div>
+</div>
+</article>
+<!-- Thread 3: Edisi Cetak vs E-Book -->
+<article class="bg-surface rounded-xl p-space-md shadow-sm active:scale-[0.99] transition-transform flex flex-col gap-space-xs relative overflow-hidden group">
+<div class="flex items-center justify-between gap-2">
+<div class="flex items-center gap-2 min-w-0">
+<span class="px-2.5 py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary font-label-sm text-label-sm">
+            Warta
+          </span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">
+            Kebiasaan Membaca
+          </span>
+</div>
+<span class="text-on-surface-variant flex items-center gap-1 text-[12px] font-label-sm flex-shrink-0">
+<span class="material-symbols-outlined text-[14px]">schedule</span>
+          Kemarin
+        </span>
+</div>
+<a class="block focus:outline-none" href="#">
+<h2 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors leading-snug">
+          Edisi cetak vs e-book: mana yang bikin fokus?
+        </h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mt-1">
+          Sensasi wangi kertas dan membalik lembaran fisik terasa tak tergantikan, tapi kepraktisan e-reader saat bepergian sungguh memikat. Bagaimana teman-teman menyeimbangkannya?
+        </p>
+</a>
+<div class="flex items-center justify-between pt-space-xs mt-1">
+<div class="flex items-center gap-2 min-w-0">
+<div class="w-6 h-6 rounded-full bg-rose/60 text-[#5E2B27] flex items-center justify-center font-label-sm text-[11px] font-bold">
+            S
+          </div>
+<span class="font-label-sm text-label-sm text-on-surface truncate">Salsa Maharani</span>
+</div>
+<div class="flex items-center gap-3 text-on-surface-variant">
+<span class="flex items-center gap-1 font-label-sm text-label-sm bg-surface-container-low px-2 py-0.5 rounded-full text-primary">
+<span class="material-symbols-outlined text-[15px]">mode_comment</span>
+            17 balasan
+          </span>
+<button aria-label="Simpan thread" class="text-on-surface-variant hover:text-primary">
+<span class="material-symbols-outlined text-[18px]">bookmark_border</span>
+</button>
+</div>
+</div>
+</article>
+<!-- Thread 4: Tantangan Baca 12 Buku -->
+<article class="bg-surface rounded-xl p-space-md shadow-sm active:scale-[0.99] transition-transform flex flex-col gap-space-xs relative overflow-hidden group">
+<div class="flex items-center justify-between gap-2">
+<div class="flex items-center gap-2 min-w-0">
+<span class="px-2.5 py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary font-label-sm text-label-sm">
+            Warta
+          </span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">
+            Tantangan 2024
+          </span>
+</div>
+<span class="text-on-surface-variant flex items-center gap-1 text-[12px] font-label-sm flex-shrink-0">
+<span class="material-symbols-outlined text-[14px]">schedule</span>
+          Kemarin
+        </span>
+</div>
+<a class="block focus:outline-none" href="#">
+<h2 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors leading-snug">
+          Tantangan baca 12 buku tahun ini, siapa ikut?
+        </h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mt-1">
+          Satu bulan, satu judul buku. Format bebas tanpa beban kuota halaman berat. Yuk susun daftar bacaan bersama dan saling menyemangati!
+        </p>
+</a>
+<div class="flex items-center justify-between pt-space-xs mt-1">
+<div class="flex items-center gap-2 min-w-0">
+<div class="w-6 h-6 rounded-full bg-surface-container-highest text-primary flex items-center justify-center font-label-sm text-[11px] font-bold">
+            D
+          </div>
+<span class="font-label-sm text-label-sm text-on-surface truncate">Dimas Aryo</span>
+</div>
+<div class="flex items-center gap-3 text-on-surface-variant">
+<span class="flex items-center gap-1 font-label-sm text-label-sm bg-surface-container-low px-2 py-0.5 rounded-full text-primary font-bold">
+<span class="material-symbols-outlined text-[15px]">mode_comment</span>
+            63 balasan
+          </span>
+<button aria-label="Simpan thread" class="text-on-surface-variant hover:text-primary">
+<span class="material-symbols-outlined text-[18px]">bookmark_border</span>
+</button>
+</div>
+</div>
+</article>
+<!-- Thread 5: Cara Mencatat Kutipan -->
+<article class="bg-surface rounded-xl p-space-md shadow-sm active:scale-[0.99] transition-transform flex flex-col gap-space-xs relative overflow-hidden group">
+<div class="flex items-center justify-between gap-2">
+<div class="flex items-center gap-2 min-w-0">
+<span class="px-2.5 py-0.5 rounded-full bg-primary-light text-primary font-label-sm text-label-sm">
+            Resensi
+          </span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">
+            Jurnal Baca
+          </span>
+</div>
+<span class="text-on-surface-variant flex items-center gap-1 text-[12px] font-label-sm flex-shrink-0">
+<span class="material-symbols-outlined text-[14px]">schedule</span>
+          2 hari lalu
+        </span>
+</div>
+<a class="block focus:outline-none" href="#">
+<h2 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors leading-snug">
+          Cara mencatat kutipan yang rapi tapi tidak ribet
+        </h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mt-1">
+          Pakai sticky note warna-warni, buku catatan saku bergaris, atau aplikasi digital? Bagikan metode sederhana kalian agar kutipan berharga tetap awet.
+        </p>
+</a>
+<div class="flex items-center justify-between pt-space-xs mt-1">
+<div class="flex items-center gap-2 min-w-0">
+<div class="w-6 h-6 rounded-full bg-secondary-fixed text-secondary flex items-center justify-center font-label-sm text-[11px] font-bold">
+            L
+          </div>
+<span class="font-label-sm text-label-sm text-on-surface truncate">Lintang Wulan</span>
+</div>
+<div class="flex items-center gap-3 text-on-surface-variant">
+<span class="flex items-center gap-1 font-label-sm text-label-sm bg-surface-container-low px-2 py-0.5 rounded-full text-primary">
+<span class="material-symbols-outlined text-[15px]">mode_comment</span>
+            9 balasan
+          </span>
+<button aria-label="Simpan thread" class="text-on-surface-variant hover:text-primary">
+<span class="material-symbols-outlined text-[18px]">bookmark_border</span>
+</button>
+</div>
+</div>
+</article>
+<!-- Delightful Literary Quote Card -->
+<div class="bg-surface-container-high rounded-xl p-space-md text-center flex flex-col items-center justify-center gap-2 relative overflow-hidden shadow-xs">
+<span class="material-symbols-outlined text-primary text-[28px] opacity-70">format_quote</span>
+<p class="font-quote text-body-md italic text-on-surface max-w-xs leading-relaxed">
+        “Buku adalah percakapan sunyi di antara dua pikiran yang dipisahkan ruang dan waktu.”
+      </p>
+<span class="font-label-sm text-label-sm text-primary tracking-wide">— Catatan RuangAksara</span>
+</div>
+<!-- Pagination Controls (Matching Design) -->
+<div class="flex items-center justify-center gap-2 pt-space-sm pb-space-lg">
+<button class="w-8 h-8 rounded-full bg-primary text-on-primary font-label-md text-label-md flex items-center justify-center shadow-xs">
+        1
+      </button>
+<button class="w-8 h-8 rounded-full bg-surface text-on-surface-variant hover:bg-surface-variant font-label-md text-label-md flex items-center justify-center shadow-xs">
+        2
+      </button>
+<button class="w-8 h-8 rounded-full bg-surface text-on-surface-variant hover:bg-surface-variant font-label-md text-label-md flex items-center justify-center shadow-xs">
+        3
+      </button>
+<button aria-label="Halaman selanjutnya" class="w-8 h-8 rounded-full bg-surface text-on-surface-variant hover:bg-surface-variant flex items-center justify-center shadow-xs">
+<span class="material-symbols-outlined text-[18px]">chevron_right</span>
+</button>
+</div>
+</div>
+<!-- Floating Action Button (FAB) for 'Mulai Diskusi Baru' -->
+<div class="fixed bottom-20 right-4 z-40">
+<button aria-label="Mulai Diskusi Baru" class="w-14 h-14 rounded-full bg-primary hover:bg-primary-dark text-on-primary flex items-center justify-center shadow-xl active:scale-95 transition-all group" id="open-modal-btn" onclick="toggleModal(true)">
+<span class="material-symbols-outlined text-[28px] group-hover:rotate-90 transition-transform duration-300">add</span>
+</button>
+</div>
+<!-- Modal: Buat Obrolan Baru (Delightful Sheet) -->
+<div class="fixed inset-0 z-50 bg-inverse-surface/40 backdrop-blur-sm hidden items-end justify-center p-0" id="new-thread-modal">
+<div class="w-full bg-surface rounded-t-3xl max-h-[751px] overflow-y-auto p-space-lg flex flex-col gap-space-md shadow-2xl animate-in slide-in-from-bottom duration-300">
+<!-- Sheet Handle & Header -->
+<div class="flex flex-col items-center gap-2">
+<div class="w-12 h-1 rounded-full bg-surface-variant"></div>
+<div class="flex items-center justify-between w-full">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Mulai Diskusi Baru</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Buka perbincangan hangat bersama sesama pembaca</p>
+</div>
+<button class="w-9 h-9 rounded-full bg-surface-variant flex items-center justify-center text-on-surface-variant" onclick="toggleModal(false)">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+</div>
+<!-- Form Inputs -->
+<div class="flex flex-col gap-space-sm">
+<label class="font-label-sm text-label-sm text-on-surface">Pilih Kategori</label>
+<div class="flex gap-2 overflow-x-auto no-scrollbar py-0.5">
+<button class="px-3 py-1.5 rounded-full bg-primary text-on-primary font-label-sm text-label-sm flex items-center gap-1" type="button">
+<span class="material-symbols-outlined text-[16px]">menu_book</span> Resensi
+          </button>
+<button class="px-3 py-1.5 rounded-full bg-surface-variant text-on-surface font-label-sm text-label-sm flex items-center gap-1" type="button">
+<span class="material-symbols-outlined text-[16px]">clock_loader_40</span> Karya
+          </button>
+<button class="px-3 py-1.5 rounded-full bg-surface-variant text-on-surface font-label-sm text-label-sm flex items-center gap-1" type="button">
+<span class="material-symbols-outlined text-[16px]">newspaper</span> Warta
+          </button>
+<button class="px-3 py-1.5 rounded-full bg-surface-variant text-on-surface font-label-sm text-label-sm flex items-center gap-1" type="button">
+<span class="material-symbols-outlined text-[16px]">groups</span> Klub Buku
+          </button>
+</div>
+<div class="flex flex-col gap-1 mt-1">
+<label class="font-label-sm text-label-sm text-on-surface">Judul Topik Diskusi</label>
+<input class="w-full bg-surface-variant px-3 py-2.5 rounded-xl font-body-sm text-body-sm text-on-surface outline-none focus:bg-surface focus:ring-2 focus:ring-primary/20" placeholder="Contoh: Pendapatmu tentang akhir kisah Laut Bercerita?" type="text"/>
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-label-sm text-on-surface">Catatan Pembuka</label>
+<textarea class="w-full bg-surface-variant p-3 rounded-xl font-body-sm text-body-sm text-on-surface outline-none focus:bg-surface focus:ring-2 focus:ring-primary/20 resize-none" placeholder="Tuliskan gagasan atau pertanyaanmu secara santun dan terbuka..." rows="4"></textarea>
+</div>
+</div>
+<!-- Action Buttons -->
+<div class="flex items-center gap-2 pt-2">
+<button class="flex-1 py-3 rounded-full bg-surface-variant font-label-md text-label-md text-on-surface-variant hover:text-on-surface text-center" onclick="toggleModal(false)">
+          Batal
+        </button>
+<button class="flex-1 py-3 rounded-full bg-primary hover:bg-primary-dark font-label-md text-label-md text-on-primary text-center shadow-md" onclick="toggleModal(false)">
+          Terbitkan Diskusi
+        </button>
+</div>
+</div>
+</div>
+</div>
+<script>
+  function switchTab(type) {
+    const btnUmum = document.getElementById('tab-forum-umum');
+    const btnKlub = document.getElementById('tab-klub-buku');
+
+    if (type === 'umum') {
+      btnUmum.className = 'flex-1 py-2 rounded-full font-label-md text-label-md transition-all flex items-center justify-center gap-1.5 bg-primary text-on-primary shadow-xs';
+      btnKlub.className = 'flex-1 py-2 rounded-full font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-all flex items-center justify-center gap-1.5';
+    } else {
+      btnKlub.className = 'flex-1 py-2 rounded-full font-label-md text-label-md transition-all flex items-center justify-center gap-1.5 bg-primary text-on-primary shadow-xs';
+      btnUmum.className = 'flex-1 py-2 rounded-full font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-all flex items-center justify-center gap-1.5';
+    }
+  }
+
+  function toggleModal(show) {
+    const modal = document.getElementById('new-thread-modal');
+    if (show) {
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+    } else {
+      modal.classList.add('hidden');
+      modal.classList.remove('flex');
+    }
+  }
+</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-glass-strong backdrop-blur-xl shadow-[0_-2px_12px_rgba(26,51,49,0.06)]" data-active-classes="text-primary font-bold"><div class="flex justify-around items-center h-16 px-space-xs"><a class="flex flex-col items-center justify-center gap-space-xs min-w-[56px] h-11 text-on-surface-variant transition-colors" data-path="beranda" href="#"><span class="material-symbols-outlined text-[22px]">cottage</span><span class="font-label-sm text-label-sm leading-none">Beranda</span></a><a class="flex flex-col items-center justify-center gap-space-xs min-w-[56px] h-11 text-on-surface-variant transition-colors" data-path="jelajah" href="#"><span class="material-symbols-outlined text-[22px]">explore</span><span class="font-label-sm text-label-sm leading-none">Jelajah</span></a><a aria-current="page" class="flex flex-col items-center justify-center gap-space-xs min-w-[56px] h-11 transition-colors text-primary font-bold" data-path="diskusi" href="#"><span class="material-symbols-outlined text-[22px]">forum</span><span class="font-label-sm text-label-sm leading-none">Diskusi</span></a><a class="flex flex-col items-center justify-center gap-space-xs min-w-[56px] h-11 text-on-surface-variant transition-colors" data-path="komunitas" href="#"><span class="material-symbols-outlined text-[22px]">groups</span><span class="font-label-sm text-label-sm leading-none">Komunitas</span></a><a class="flex flex-col items-center justify-center gap-space-xs min-w-[56px] h-11 text-on-surface-variant transition-colors" data-path="profil" href="#"><span class="material-symbols-outlined text-[22px]">person</span><span class="font-label-sm text-label-sm leading-none">Profil</span></a></div></nav></body></html>

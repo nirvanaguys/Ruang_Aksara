@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+
+<html lang="id">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport"/>
+<title>RuangAksara - Hujan di Rak Ketiga</title>
+<!-- Google Fonts: Lora & Nunito -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&amp;family=Nunito:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            lora: ['Lora', 'serif'],
+            nunito: ['Nunito', 'sans-serif'],
+          },
+          colors: {
+            brand: {
+              primary: '#2A6B65',
+              'primary-dark': '#1F524D',
+              'primary-light': '#D4EBE8',
+              secondary: '#5A829A',
+              sand: '#D4A373',
+              'sand-dark': '#4A3728',
+              'sand-light': '#F8F1EB',
+              bg: '#F5F9F8',
+              surface: '#FFFFFF',
+              dark: '#1A3331',
+              muted: '#5A7A76',
+              rose: '#E8B4B0',
+              'rose-dark': '#C96860',
+            }
+          }
+        }
+      }
+    }
+  </script>
+<style>
+    body {
+      background-color: #F5F9F8;
+      font-family: 'Nunito', sans-serif;
+      color: #1A3331;
+      -webkit-font-smoothing: antialiased;
+      padding-bottom: 84px; /* Space for fixed bottom bar */
+    }
+    /* Sticky Top Reading Progress Bar */
+    .reading-progress-track {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 3px;
+      background-color: rgba(42, 107, 101, 0.12);
+      z-index: 60;
+    }
+    .reading-progress-bar {
+      height: 100%;
+      width: 42%; /* Simulated 42% reading progress */
+      background: linear-gradient(90deg, #2A6B65 0%, #5A829A 100%);
+      border-radius: 0 2px 2px 0;
+      transition: width 0.2s ease;
+    }
+    /* Abstract CSS Book Cover */
+    .css-book-cover {
+      width: 100%;
+      max-width: 260px;
+      height: 330px;
+      margin: 0 auto;
+      border-radius: 8px 14px 14px 8px;
+      position: relative;
+      background: linear-gradient(135deg, #2A6B65 0%, #1F524D 65%, #163B37 100%);
+      box-shadow: 
+        -4px 0 0 #18423E,
+        -7px 0 0 #112F2C,
+        0 14px 28px rgba(26, 51, 49, 0.22),
+        0 4px 10px rgba(26, 51, 49, 0.12);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 24px 20px;
+      overflow: hidden;
+    }
+    .css-book-cover::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 18px;
+      height: 100%;
+      background: linear-gradient(90deg, rgba(255,255,255,0.18) 0%, rgba(255,255,255,0.02) 70%, rgba(0,0,0,0.2) 100%);
+      border-right: 1px solid rgba(0,0,0,0.2);
+    }
+    .css-book-accent-circle {
+      position: absolute;
+      width: 150px;
+      height: 150px;
+      right: -30px;
+      top: -30px;
+      border-radius: 9999px;
+      background: radial-gradient(circle, rgba(212, 163, 115, 0.4) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    .css-book-accent-strip {
+      position: absolute;
+      bottom: 24px;
+      right: 18px;
+      width: 44px;
+      height: 6px;
+      border-radius: 3px;
+      background: #D4A373;
+    }
+    /* Blockquote with warm sand styling */
+    .warm-quote {
+      border-left: 4px solid #D4A373;
+      background: rgba(212, 163, 115, 0.08);
+      border-radius: 0 12px 12px 0;
+    }
+  </style>
+</head>
+<body class="selection:bg-brand-primary-light selection:text-brand-dark max-w-[390px] mx-auto">
+<!-- 1. Reading Progress Bar at the very top -->
+<div class="reading-progress-track max-w-[390px] mx-auto">
+<div class="reading-progress-bar" id="readingProgressBar"></div>
+</div>
+<!-- 2. Sticky Transparent Navbar -->
+<header class="sticky top-0 z-50 bg-[#F5F9F8]/85 backdrop-blur-md border-b border-brand-primary/10 transition-all max-w-[390px] mx-auto">
+<div class="mx-auto px-4 h-14 flex items-center justify-between max-w-[390px]">
+<!-- Back Arrow -->
+<button aria-label="Kembali" class="w-9 h-9 rounded-full flex items-center justify-center text-brand-dark hover:bg-brand-primary-light/60 transition-colors -ml-1 focus:outline-none" onclick="history.back()" type="button">
+<svg class="w-5 h-5" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M15 19l-7-7 7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</button>
+<!-- Center Book Title / Progress Pill -->
+<div class="text-center px-2 truncate flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-brand-primary animate-pulse"></span>
+<span class="text-xs font-semibold text-brand-muted truncate max-w-[150px]">Hujan di Rak Ketiga</span>
+</div>
+<!-- Right Action Icons: Bookmark & Share -->
+<div class="flex items-center gap-1 -mr-1">
+<button aria-label="Simpan ke Rak Buku" class="w-9 h-9 rounded-full flex items-center justify-center text-brand-dark hover:text-brand-primary hover:bg-brand-primary-light/60 transition-colors focus:outline-none" onclick="this.classList.toggle('text-brand-primary');" type="button">
+<svg class="w-5 h-5" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path>
+</svg>
+</button>
+<button aria-label="Bagikan tulisan" class="w-9 h-9 rounded-full flex items-center justify-center text-brand-dark hover:text-brand-primary hover:bg-brand-primary-light/60 transition-colors focus:outline-none" type="button">
+<svg class="w-5 h-5" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path>
+</svg>
+</button>
+</div>
+</div>
+</header>
+<!-- Main Article Body -->
+<main class="mx-auto px-5 pt-5 pb-8 max-w-[390px]">
+<!-- 3. Header Section -->
+<header class="mb-6 max-w-[390px] mx-auto">
+<!-- Category Chip -->
+<div class="mb-3 max-w-[390px]">
+<span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold bg-brand-primary-light text-brand-primary tracking-wide">
+          Resensi
+        </span>
+</div>
+<!-- Title -->
+<h1 class="font-lora text-2xl sm:text-[28px] leading-snug font-bold text-brand-dark tracking-tight mb-2.5">
+        Hujan di Rak Ketiga
+      </h1>
+<!-- Meta Info -->
+<div class="flex items-center gap-2 text-xs font-nunito text-brand-muted max-w-[390px]">
+<span class="w-6 h-6 rounded-full bg-brand-secondary/20 text-brand-secondary font-bold flex items-center justify-center text-[10px]">
+          N
+        </span>
+<span class="font-medium text-brand-dark">Oleh Nadira Ayu</span>
+<span>·</span>
+<span>5 menit baca</span>
+<span>·</span>
+<span class="text-brand-muted/70">Kemarin</span>
+</div>
+</header>
+<!-- 4. Content Area: Abstract CSS Book Cover Placeholder -->
+<section class="mb-8 flex justify-center">
+<div class="css-book-cover">
+<div class="css-book-accent-circle"></div>
+<div class="relative z-10 pl-2">
+<span class="inline-block px-2 py-0.5 rounded text-[10px] uppercase font-bold tracking-wider text-brand-sand bg-black/25">
+            Edisi Sastra
+          </span>
+<h2 class="font-lora text-lg font-bold text-white mt-2 leading-tight">
+            Hujan di Rak Ketiga
+          </h2>
+<p class="text-xs text-brand-primary-light/80 font-nunito mt-1">
+            Nadira Ayu
+          </p>
+</div>
+<div class="relative z-10 pl-2 flex items-end justify-between">
+<div class="space-y-1">
+<div class="w-10 h-0.5 bg-brand-sand/70 rounded"></div>
+<p class="text-[9px] uppercase tracking-widest text-white/60 font-nunito">
+              RuangAksara Press
+            </p>
+</div>
+<div class="css-book-accent-strip"></div>
+</div>
+</div>
+</section>
+<!-- 5. Body Text & Article Context -->
+<article class="space-y-5 text-base leading-[1.7] text-brand-dark font-nunito">
+<p class="first-letter:text-4xl first-letter:font-lora first-letter:font-bold first-letter:text-brand-primary first-letter:mr-2 first-letter:float-left first-letter:leading-none">
+        Aroma petrikor yang terperangkap di antara lembaran kertas kusam selalu memiliki cara tersendiri untuk memanggil ingatan lampau. Ketika membuka novel <em>Hujan di Rak Ketiga</em> di beranda rumah saat gerimis mulai menitik, ada rasa hening yang perlahan merayap dan memeluk pikiran dengan tenang.
+      </p>
+<p>
+        Buku ini bukan sekadar narasi tentang seorang penjaga perpustakaan tua di sudut kota kecil, melainkan perjumpaan tak terduga dengan surat-surat tak terkirim yang terselip di punggung-punggung buku ensiklopedia usang. Setiap bab mengalir seperti secangkir seduhan teh melati hangat—perlahan, tanpa tergesa-gesa, namun menghangatkan dada.
+      </p>
+<!-- Blockquote Section -->
+<blockquote class="warm-quote p-4 sm:p-5 my-6">
+<p class="font-lora italic text-[15px] sm:text-base text-brand-dark leading-relaxed font-medium">
+          “Membaca adalah percakapan sunyi di antara dua pikiran yang dipisahkan oleh ruang dan waktu, namun disatukan oleh kehangatan selembar halaman.”
+        </p>
+<cite class="block font-nunito not-italic text-xs font-semibold text-brand-sand-dark mt-2.5">
+          — Halaman 142, Catatan Pinggir
+        </cite>
+</blockquote>
+<p>
+        Karakter utama, Pak Seno, digambarkan bukan sebagai pahlawan dengan ambisi muluk, melainkan pendengar setia bagi jejak kata yang ditinggalkan para pembaca sebelumnya. Gaya bahasanya sederhana namun berbobot, membuat kita ingin melambatkan ritme hidup sejenak dan memeriksa rak buku pribadi di rumah.
+      </p>
+<p>
+        Bagi kamu yang menyukai nuansa sastra kontemplatif dengan ritme yang teduh, buku ini adalah teman yang sangat tepat untuk diseduh bersama teh hangat di sore hari yang rintik.
+      </p>
+<!-- Tags list -->
+<div class="pt-4 flex flex-wrap gap-2">
+<span class="text-xs bg-brand-surface border border-brand-primary/10 text-brand-muted px-2.5 py-1 rounded-full">#SastraIndonesia</span>
+<span class="text-xs bg-brand-surface border border-brand-primary/10 text-brand-muted px-2.5 py-1 rounded-full">#ResensiBuku</span>
+<span class="text-xs bg-brand-surface border border-brand-primary/10 text-brand-muted px-2.5 py-1 rounded-full">#PerpustakaanHujan</span>
+</div>
+</article>
+<!-- Curated Footnote Box -->
+<div class="mt-8 p-4 rounded-2xl bg-brand-primary-light/40 border border-brand-primary/10 flex items-start gap-3">
+<div class="w-8 h-8 rounded-full bg-brand-primary text-white flex items-center justify-center shrink-0 mt-0.5">
+<svg class="w-4 h-4" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</div>
+<div>
+<h3 class="text-xs font-bold text-brand-dark mb-0.5">Tentang Nadira Ayu</h3>
+<p class="text-xs text-brand-muted leading-relaxed">
+          Penyuka novel sastra dan teh hangat saat hujan. Rutin membagikan catatan baca mingguan di RuangAksara.
+        </p>
+</div>
+</div>
+</main>
+<!-- 6. Fixed Bottom Action Bar -->
+<footer class="fixed bottom-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md border-t border-brand-primary/10 shadow-[0_-4px_20px_rgba(26,51,49,0.05)] max-w-[390px] mx-auto">
+<div class="mx-auto px-4 h-16 flex items-center justify-between gap-3 max-w-[390px]">
+<!-- Suka (Heart Icon with Rose color #E8B4B0) -->
+<button aria-label="Suka artikel" class="flex items-center gap-1.5 px-3 py-2 rounded-full hover:bg-brand-bg transition-all active:scale-95 group focus:outline-none" id="likeBtn" onclick="const icon = this.querySelector('svg'); const count = this.querySelector('.like-count'); if(icon.getAttribute('fill') === 'currentColor'){ icon.setAttribute('fill', 'none'); count.textContent = '128'; this.classList.remove('text-brand-rose-dark'); } else { icon.setAttribute('fill', 'currentColor'); count.textContent = '129'; this.classList.add('text-brand-rose-dark'); }" type="button">
+<svg class="w-5 h-5 text-brand-rose group-hover:scale-110 transition-transform" fill="currentColor" stroke="#E8B4B0" stroke-width="1.8" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg>
+<span class="like-count text-xs font-semibold text-brand-dark">128</span>
+</button>
+<!-- Komentar (Chat Icon) -->
+<button aria-label="Lihat komentar" class="flex items-center gap-1.5 px-3 py-2 rounded-full hover:bg-brand-bg transition-all active:scale-95 text-brand-muted hover:text-brand-primary focus:outline-none" type="button">
+<svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="1.8" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg>
+<span class="text-xs font-semibold text-brand-dark">14</span>
+</button>
+<!-- Primary Action: Tulis Ulasan (Teal, pill shape) -->
+<button class="flex-1 h-11 bg-brand-primary hover:bg-brand-primary-dark text-white font-nunito font-semibold text-xs sm:text-sm rounded-full shadow-md shadow-brand-primary/20 hover:shadow-brand-primary/30 active:scale-[0.98] transition-all flex items-center justify-center gap-1.5 px-4" type="button">
+<svg class="w-4 h-4" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+<span>Tulis Ulasan</span>
+</button>
+</div>
+</footer>
+</body>
+</html>
