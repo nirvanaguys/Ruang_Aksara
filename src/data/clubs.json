@@ -1,0 +1,73 @@
+[
+  {
+    "id": "lingkar-realisme-magis",
+    "name": "Lingkar Sastra Realisme Magis",
+    "category": "Sastra Klasik",
+    "description": "Menelusuri batas antara kenyataan dan dongeng dalam karya sastra Amerika Latin dan Nusantara.",
+    "schedule": "Setiap Sabtu, 19.30 WIB",
+    "currentBook": "Cantik Itu Luka — Eka Kurniawan",
+    "bookId": "cantik-itu-luka",
+    "memberCount": 142,
+    "maxMembers": 150,
+    "joined": true,
+    "bannerColor": "from-primary/20 via-primary-light/40 to-surface-variant",
+    "avatarUrls": [
+      "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=120&q=80",
+      "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=120&q=80",
+      "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=120&q=80"
+    ]
+  },
+  {
+    "id": "klub-baca-hujan-puisi",
+    "name": "Klub Baca Hujan & Puisi",
+    "category": "Puisi & Zine",
+    "description": "Membaca sajak bersama di kala gerimis turun. Tempat saling berbagi bait favorit dan zine mandiri.",
+    "schedule": "Minggu sore, 16.00 WIB",
+    "currentBook": "Hujan Bulan Juni — Sapardi Djoko Damono",
+    "bookId": "hujan-bulan-juni",
+    "memberCount": 98,
+    "maxMembers": 120,
+    "joined": true,
+    "bannerColor": "from-rose/30 via-tertiary-fixed/30 to-surface-variant",
+    "avatarUrls": [
+      "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=120&q=80",
+      "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=120&q=80",
+      "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&w=120&q=80"
+    ]
+  },
+  {
+    "id": "studi-sejarah-memoar",
+    "name": "Kelompok Studi Sejarah & Memoar",
+    "category": "Non-Fiksi",
+    "description": "Membongkar arsip sejarah yang terkubur lewat karya fiksi sejarah dan memoar perjuangan.",
+    "schedule": "Dua pekan sekali, Rabu malam",
+    "currentBook": "Laut Bercerita — Leila S. Chudori",
+    "bookId": "laut-bercerita",
+    "memberCount": 210,
+    "maxMembers": 250,
+    "joined": false,
+    "bannerColor": "from-secondary-container/40 via-surface-variant to-secondary-light/30",
+    "avatarUrls": [
+      "https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?auto=format&fit=crop&w=120&q=80",
+      "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=120&q=80",
+      "https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?auto=format&fit=crop&w=120&q=80"
+    ]
+  },
+  {
+    "id": "klub-esai-filsafat",
+    "name": "Klub Esai & Filsafat Kritis",
+    "category": "Non-Fiksi",
+    "description": "Menelaah gagasan pemikir-pemikir kritis dan hubungannya dengan dinamika sosial kiwari.",
+    "schedule": "Jumat malam, 20.00 WIB",
+    "currentBook": "Bumi Manusia — Pramoedya Ananta Toer",
+    "bookId": "bumi-manusia",
+    "memberCount": 85,
+    "maxMembers": 100,
+    "joined": false,
+    "bannerColor": "from-tertiary/20 via-surface-dim/40 to-surface-variant",
+    "avatarUrls": [
+      "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=120&q=80",
+      "https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?auto=format&fit=crop&w=120&q=80"
+    ]
+  }
+]

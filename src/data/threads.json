@@ -1,0 +1,129 @@
+[
+  {
+    "id": "1",
+    "title": "Apakah sastra terjemahan Indonesia sudah cukup menangkap nuansa bahasa aslinya?",
+    "category": "Diskusi",
+    "author": {
+      "name": "Dimas Aksara",
+      "handle": "@dimas_aksara",
+      "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=120&q=80"
+    },
+    "createdAt": "3 jam yang lalu",
+    "bookId": "laut-bercerita",
+    "bookTitle": "Laut Bercerita",
+    "excerpt": "Sering kali saya merasa ada idiom dan rasa bahasa yang hilang ketika membaca novel klasik terjemahan. Bagaimana perbandingan karya penerbit independen vs korporat besar?",
+    "repliesCount": 24,
+    "likesCount": 56,
+    "comments": [
+      {
+        "id": "c1",
+        "author": {
+          "name": "Farah Salsabila",
+          "handle": "@farah_aksara",
+          "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=120&q=80"
+        },
+        "createdAt": "2 jam yang lalu",
+        "content": "Menurut saya, penerjemah sekarang jauh lebih menghargai konteks sosiokultural buku aslinya. Beberapa penerbit indie bahkan menambahkan glosarium budaya di catatan kaki yang sangat membantu.",
+        "likes": 12
+      },
+      {
+        "id": "c2",
+        "author": {
+          "name": "Bima Wicaksono",
+          "handle": "@bimawicak",
+          "avatar": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=120&q=80"
+        },
+        "createdAt": "1 jam yang lalu",
+        "content": "Tergantung siapa penerjemahnya. Karya-karya yang diterjemahkan oleh sastrawan seperti Anton Kurnia atau Ronny Agustinus terasa sangat organik dan tidak kaku sama sekali.",
+        "likes": 8
+      }
+    ]
+  },
+  {
+    "id": "2",
+    "title": "Rekomendasi novel lokal dengan latar suasana hujan atau pesisir yang tenang?",
+    "category": "Rekomendasi",
+    "author": {
+      "name": "Citra Arundina",
+      "handle": "@citra_arundina",
+      "avatar": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=120&q=80"
+    },
+    "createdAt": "Kemarin",
+    "bookId": "hujan-bulan-juni",
+    "bookTitle": "Hujan Bulan Juni",
+    "excerpt": "Lagi butuh bacaan akhir pekan yang temponya lambat, dengan deskripsi aroma tanah basah dan ombak yang syahdu. Ada rekomendasi selain karya Sapardi?",
+    "repliesCount": 42,
+    "likesCount": 89,
+    "comments": [
+      {
+        "id": "c3",
+        "author": {
+          "name": "Sekar Kinanti",
+          "handle": "@sekar_puisi",
+          "avatar": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=120&q=80"
+        },
+        "createdAt": "Kemarin",
+        "content": "Coba baca 'Burung-Burung Manyar' karya Y.B. Mangunwijaya atau puisi-puisi Oka Rusmini di buku Monolog Pohon. Rasanya tenang sekali dibaca saat hujan gerimis.",
+        "likes": 19
+      }
+    ]
+  },
+  {
+    "id": "3",
+    "title": "Membedah karakter Dewi Ayu dalam Cantik Itu Luka: Simbol perlawanan atau korban zaman?",
+    "category": "Bedah Buku",
+    "author": {
+      "name": "Nadira Ayu",
+      "handle": "@nadira_ayu",
+      "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=120&q=80"
+    },
+    "createdAt": "2 hari yang lalu",
+    "bookId": "cantik-itu-luka",
+    "bookTitle": "Cantik Itu Luka",
+    "excerpt": "Menarik melihat bagaimana Dewi Ayu tidak pernah menempatkan dirinya sebagai korban yang pasif. Ia merangkul tragedinya dengan tawa sinis dan kepala tegak.",
+    "repliesCount": 31,
+    "likesCount": 112,
+    "comments": [
+      {
+        "id": "c4",
+        "author": {
+          "name": "Danang Prasetyo",
+          "handle": "@danang_esai",
+          "avatar": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=120&q=80"
+        },
+        "createdAt": "2 hari yang lalu",
+        "content": "Dewi Ayu adalah agen aktif dalam narasi penderitaannya sendiri. Lewat ironi dan kekejian humor yang dimilikinya, ia melucuti superioritas penjajah Belanda maupun tentara Jepang.",
+        "likes": 27
+      }
+    ]
+  },
+  {
+    "id": "4",
+    "title": "Bagaimana cara kalian membangun rutinitas membaca tanpa merasa diburu target Goodreads?",
+    "category": "Santai",
+    "author": {
+      "name": "Fajar Hidayat",
+      "handle": "@fajar_hidayat",
+      "avatar": "https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?auto=format&fit=crop&w=120&q=80"
+    },
+    "createdAt": "4 hari yang lalu",
+    "bookId": null,
+    "bookTitle": null,
+    "excerpt": "Tahun ini saya memutuskan tidak menetapkan target angka jumlah buku. Hasilnya, saya bisa berlama-lama membaca satu bab dan membuat catatan pinggir yang bermakna.",
+    "repliesCount": 19,
+    "likesCount": 73,
+    "comments": [
+      {
+        "id": "c5",
+        "author": {
+          "name": "Farah Salsabila",
+          "handle": "@farah_aksara",
+          "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=120&q=80"
+        },
+        "createdAt": "3 hari yang lalu",
+        "content": "Sangat setuju! Di RuangAksara saya lebih suka fokus pada rak 'Sedang Dibaca' dan ikut diskusi santai daripada menghitung berapa lembar per hari.",
+        "likes": 14
+      }
+    ]
+  }
+]

@@ -1,0 +1,80 @@
+{
+  "name": "Farah Salsabila",
+  "handle": "@farah_aksara",
+  "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=240&q=80",
+  "bio": "Pembaca fiksi spekulatif & realisme magis. Penikmat teh melati hangat saat hujan lebat di jendela kamar, dan pengarsip kutipan yang tercecer.",
+  "location": "Bandung, Indonesia",
+  "joinedDate": "Maret 2025",
+  "stats": {
+    "booksRead": 28,
+    "readingGoal": 36,
+    "clubsJoined": 4,
+    "reviewsPublished": 16
+  },
+  "currentReading": [
+    {
+      "bookId": "laut-bercerita",
+      "title": "Laut Bercerita",
+      "author": "Leila S. Chudori",
+      "progress": 68,
+      "currentPage": 258,
+      "totalPages": 379,
+      "spineColor": "#3b637a"
+    },
+    {
+      "bookId": "raden-mandasia",
+      "title": "Raden Mandasia Si Pencuri Daging Sapi",
+      "author": "Yusi Avianto Pareanom",
+      "progress": 35,
+      "currentPage": 156,
+      "totalPages": 448,
+      "spineColor": "#276862"
+    }
+  ],
+  "finishedReading": [
+    {
+      "bookId": "cantik-itu-luka",
+      "title": "Cantik Itu Luka",
+      "author": "Eka Kurniawan",
+      "rating": 5,
+      "finishedAt": "Oktober 2026",
+      "spineColor": "#2A6B65"
+    },
+    {
+      "bookId": "hujan-bulan-juni",
+      "title": "Hujan Bulan Juni",
+      "author": "Sapardi Djoko Damono",
+      "rating": 5,
+      "finishedAt": "September 2026",
+      "spineColor": "#E8B4B0"
+    },
+    {
+      "bookId": "bumi-manusia",
+      "title": "Bumi Manusia",
+      "author": "Pramoedya Ananta Toer",
+      "rating": 5,
+      "finishedAt": "Agustus 2026",
+      "spineColor": "#65421a"
+    }
+  ],
+  "wantToRead": [
+    {
+      "bookId": "gadis-kretek",
+      "title": "Gadis Kretek",
+      "author": "Ratih Kumala",
+      "spineColor": "#80592f"
+    },
+    {
+      "bookId": "sirkus-pohon",
+      "title": "Sirkus Pohon",
+      "author": "Andrea Hirata",
+      "spineColor": "#5A7A76"
+    },
+    {
+      "bookId": "segi-tiga",
+      "title": "Segi Tiga",
+      "author": "Sapardi Djoko Damono",
+      "spineColor": "#3d667d"
+    }
+  ]
+}
